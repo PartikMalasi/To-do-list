@@ -1,0 +1,131 @@
+.top{
+    text-align: center;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+h{
+  font-family: serif;
+}
+.he{
+  FONT-SIZE: 85px;
+  MARGIN: 10PX;
+  color: #FBECB2;
+}
+h2{
+  margin-bottom: 0;
+  color: #7895CB;
+}
+.main{
+
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: auto;
+    display: flex;
+   
+    
+    gap: 20px;
+  justify-content: center;
+  align-items: center;
+   
+
+    flex-wrap: wrap;
+}
+.task:hover{
+  
+  transform: scale(1.1);
+}
+.task{
+    height: 270px;
+    width: 250px;
+    transition-property: transform;
+    transition-duration: 1s;
+    border-radius: 10%;
+    background-color:white;
+    padding: 10px;
+  color: black;
+    text-align: center;
+   
+    
+}
+body{background-image: linear-gradient(to right, black, #120145);
+
+   
+    
+}
+.para{
+  font-size: 22px;
+  width: 250px;
+  height: 95px;
+  overflow-y: auto;
+   
+}
+.heading{
+  margin: 0;
+  padding: 5px;
+  font-size: 45px;
+    
+}
+
+  
+ .box{
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin: auto;
+  
+  padding:0px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fbfbfb;
+  border: 2px solid transparent;
+  height: 36px;
+  box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  :focus{
+      border: 2px solid #000;
+      border-radius: 4px;
+  }
+
+
+ }
+
+ .save{
+  
+
+  margin : 0;
+  margin-top: 18px;
+  
+ }
+ 
+
+
+
+
+/* CSS */
+.btn {
+  
+  
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.btn:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}

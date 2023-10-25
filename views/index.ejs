@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="top">
+      
+      
+
+     
+
+      
+    <h2><%= date%></h2> 
+    <h1 class="he">🧾To-Do-List🧾 </h1> 
+   
+    <form action="/check" method="post" >
+      
+      <input class="box" type="text" name="task" placeholder="      ✍️Add a new task">
+      <input class="btn save" type="submit" value="  SAVE  ">
+      </form>
+    </div>  
+     
+    <div class="main">
+     
+       
+        <% htmlContant.forEach((newtask)=> { %>
+            <div class="task" >
+               <h1 class="heading">Task</h1>
+        <hr class="h">
+
+              <p class="para"><%-newtask%></p> 
+              <form action="/delete" method="get">
+                <input class="btn" onclick="del(<%= count %>)" type="submit" placeholder="&#10004" value=" Done">
+               
+              </form>  
+              
+              <% count++ %>
+            </div>  
+            <%}) %>
+       
+    </div>            
+<script>
+   function del(a) {
+        const b=document.getElementsByClassName("task");
+        b[a-1].style.display="none";
+        
+      } 
+</script>
+   
+
+    
+</body>
+</html>
