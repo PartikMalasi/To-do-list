@@ -32,25 +32,19 @@
                <h1 class="heading">Task</h1>
         <hr class="h">
 
-              <p class="para"><%-newtask%></p> 
+              <p class="para"><%-newtask.task%></p> 
               <form action="/delete" method="get">
-                <input class="btn" onclick="del(<%= count %>)" type="submit" placeholder="&#10004" value=" Done">
+                 <input type="hidden" name="taskId" value="<%= newtask.id %>">
+                <input class="btn" type="submit" placeholder="&#10004" value=" Done">
                
               </form>  
-              
-              <% count++ %>
+            
             </div>  
             <%}) %>
        
     </div>            
-<script>
-   function del(a) {
-        const b=document.getElementsByClassName("task");
-        b[a-1].style.display="none";
-        
-      } 
-</script>
-   
+
+
 
     
 </body>
