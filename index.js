@@ -34,16 +34,13 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { htmlContant: c, date: dates });
 });
 
-var p = 1;
 app.post("/check", (req, res) => {
+  var p = 1;
   if (req.body.task != []) {
     c.push({ task: req.body.task, id: p });
     p++;
   }
-  //   console.log(c);
-  const data = { htmlContant: c, date: dates };
   res.redirect("/");
-  // res.render("index.ejs",data);
 });
 
 app.get("/delete", (req, res) => {
@@ -51,10 +48,7 @@ app.get("/delete", (req, res) => {
   console.log(taskId);
   c = c.filter((task) => task.id !== taskId);
   console.log("delete " + c);
-  //    c=newArrayWithoutTask;
-  const data = { htmlContant: c, date: dates };
   res.redirect("/");
-  // res.render("index.ejs",data);
 });
 
 app.listen(port, () => {
