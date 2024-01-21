@@ -33,9 +33,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.render("index.ejs", { htmlContant: c, date: dates });
 });
-
+ var p = 1;
 app.post("/check", (req, res) => {
-  var p = 1;
+ 
   if (req.body.task != []) {
     c.push({ task: req.body.task, id: p });
     p++;
